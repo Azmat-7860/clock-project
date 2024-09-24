@@ -1,0 +1,170 @@
+
+.clock{
+    width: 400px;
+    height: 400px;
+    border:5px solid black;
+    border-radius:50% ;
+    /* background-color: aqua; */
+    background: radial-gradient(white, black);
+    margin: 0 auto;
+    position: relative;
+}
+.mid-point{
+    z-index: 100;
+    width: 12px;
+    height:12px ;
+    background-color: gold;
+    border-radius: 50%;
+    position: absolute;
+    top: 195px;
+    left: 195px;  
+}
+.sec, .min , .hour{
+    position: absolute;
+    border-top-left-radius: 100%;
+     border-top-right-radius: 100%;
+     transform-origin: bottom; 
+}
+.sec{
+     z-index: 3;
+     width: 5px;
+     height: 190px;
+     background-color:black;
+     left: 198px;
+     top:10px; 
+     animation: sec-anim 60s linear infinite ;
+     animation-timing-function: steps(60);
+}
+.min{
+     z-index: 2;
+     width: 7px;
+     height: 150px;
+     background-color:red; 
+     left: 198px;
+     top:50px;
+     animation: min-anim 3600s linear infinite;
+}
+.hour{
+    z-index:1;
+     width: 9px;
+     height: 120px;
+     background-color:green; 
+     left: 196px;
+     top:80px;
+     animation: hour-anim 43200s linear infinite; 
+}
+@keyframes sec-anim{
+    from{
+        rotate: 0deg;
+    }
+    to{
+        rotate: 360deg;
+    }
+   
+}
+@keyframes min-anim{
+    from{
+        rotate: 0deg;
+    }
+    to{
+        rotate: 360deg;
+    }
+   
+}
+@keyframes hour-anim{
+    from{
+        rotate: 0deg;
+    }
+    to{
+        rotate: 360deg;
+    }
+   
+}
+.one{
+    position: absolute;
+    left: 280px;
+    top: 25px;
+    font-size:50px;
+}
+.two{
+    position: absolute;
+    right: 30px;
+    top: 80px;
+    font-size:50px;
+}
+.three{
+    position: absolute;
+    right: 0px;
+    top: 170px;
+    font-size:50px; 
+}
+.four{
+    position: absolute;
+    bottom: 80px;
+   right: 30px;
+    font-size:50px;
+}
+.five{
+    position: absolute;
+    bottom: 16px;
+    right: 95px;
+    font-size:50px;
+}
+
+.six{
+    position: absolute;
+    bottom: 0px;
+    left: 185px;
+    font-size:50px;
+}
+.seven{
+    position: absolute;
+    bottom: 18px;
+    left: 100px;
+    font-size:50px;
+}
+.eight{
+    position: absolute;
+    left: 32px;
+    bottom: 80px;
+    font-size:50px;
+} 
+.nine{
+    position: absolute;
+    left: 0px;
+    top: 170px;
+    font-size:50px;
+} 
+.ten{
+    position: absolute;
+    left: 25px;
+    top: 90px;
+    font-size:50px;
+}
+
+.eleven{
+    position: absolute;
+   left: 90px;
+    top: 27px;
+    font-size:50px;
+}
+.twelve{
+    position: absolute;
+    top: 0px;
+    left: 175px;
+    font-size:50px;
+}
+
+
+
+.text{
+    position: absolute;
+    top: 200px;
+    left: 140px;  
+    color: red;
+    font-family: cursive;
+    font-size: 30px;
+    text-align: center;
+    text-shadow: 5px 5px 3px #888888;
+}
+
